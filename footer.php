@@ -15,13 +15,26 @@
 			
 			<section class="blog-links">
 				<h3> from the blog</h3>
-					<?php
-						global $post;
-						$args = array( 'numberposts' => 2, 'offset'=> 0, );
-						$myposts = get_posts( $args );
-						foreach( $myposts as $post ) :	setup_postdata($post); ?>
-							<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-					<?php endforeach; ?>
+				<?php
+
+				// The Query
+				query_posts( 'cat=16&posts_per_page=2' );
+
+				// The Loop
+				while ( have_posts() ) : the_post();
+					echo '<a href="';
+					echo get_permalink();
+					echo '">';
+					echo '<li>';
+					the_title();
+					echo '</li>';
+					echo '</a>';
+				endwhile;
+
+				// Reset Query
+				wp_reset_query();
+
+				?>
 			</section>
 
 			<section class="twitter-links">

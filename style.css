@@ -93,7 +93,7 @@ a img {
 ----------------------------------------------- */
 
 #container {
-	max-width: 960px;
+	width: 960px;
 	margin: 30px auto;
 	background: #fff;
 }
@@ -120,62 +120,30 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-/* Headings */
-
-h1 {
-	font-size: 4.4rem;
-	font-family: 'cassannet', sans-serif;
-	line-height: 6.3rem;
-    margin-top: 21px;
-    margin-bottom: 42px;
+/* Links */
+a {
+	color: #3399cc;
+	text-decoration: none;
+}
+a:visited {
+	color: #3399cc;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #3399cc;
 }
 
-h2 {
-	font-size: 2.5rem;
-	line-height: 6.3rem;
-	font-family: 'Banda', sans-serif;
+/* Text meant only for screen readers */
+.assistive-text {
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
 }
 
-h3 {
-	font-family: 'cassannet', sans-serif;
-	font-size: 2.5rem;
-	line-height: 4.2rem;
-	margin-top: 42px;
-    margin-bottom: 21px;
-	text-shadow: 0px 1px 1px #c3c3c3;
-}
-
-h4 {
-	font-family: 'Banda', sans-serif;
-	font-size: 1.9rem;
-}
-
-h5 {
-	font-family: 'banda', sans-serif;
-	font-size: 1.4rem;
-	line-height: 3.2rem;
-}
-
-@font-face {
-    font-family: 'Banda';
-    src: url('fonts/regular-webfont.eot');
-    src: url('fonts/regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/regular-webfont.woff') format('woff'),
-         url('fonts/regular-webfont.ttf') format('truetype'),
-         url('fonts/regular-webfont.svg#BandaRegularRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Cassannet';
-    src: url('fonts/cassannet-webfont.eot');
-    src: url('fonts/cassannet-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/cassannet-webfont.woff') format('woff'),
-         url('fonts/cassannet-webfont.ttf') format('truetype'),
-         url('fonts/cassannet-webfont.svg#BandaRegularRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+/* Text meant only for screen readers - edit for bookblock span elements */
+.assistive-text2 {
+	text-indent: -9999px;
 }
 
 /*********************************************************************************************
@@ -394,30 +362,62 @@ textarea {
 	width: 99%;
 }
 
-/* Links */
-a {
-	color: #3399cc;
-	text-decoration: none;
-}
-a:visited {
-	color: #3399cc;
-}
-a:hover,
-a:focus,
-a:active {
-	color: #3399cc;
+/* Headings */
+
+h1 {
+	font-size: 4.4rem;
+	font-family: 'cassannet', sans-serif;
+	line-height: 6.3rem;
+    margin-top: 21px;
+    margin-bottom: 42px;
 }
 
-/* Text meant only for screen readers */
-.assistive-text {
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
+h2 {
+	font-size: 2.5rem;
+	line-height: 6.3rem;
+	font-family: 'Banda', sans-serif;
 }
 
-/* Text meant only for screen readers - edit for bookblock span elements */
-.assistive-text2 {
-	text-indent: -9999px;
+h3 {
+	font-family: 'cassannet', sans-serif;
+	font-size: 2.5rem;
+	line-height: 4.2rem;
+	margin-top: 42px;
+    margin-bottom: 21px;
+	text-shadow: 0px 1px 1px #c3c3c3;
+}
+
+h4 {
+	font-family: 'Banda', sans-serif;
+	font-size: 1.9rem;
+}
+
+h5 {
+	font-family: 'banda', sans-serif;
+	font-size: 1.4rem;
+	line-height: 3.2rem;
+}
+
+@font-face {
+    font-family: 'Banda';
+    src: url('fonts/regular-webfont.eot');
+    src: url('fonts/regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/regular-webfont.woff') format('woff'),
+         url('fonts/regular-webfont.ttf') format('truetype'),
+         url('fonts/regular-webfont.svg#BandaRegularRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cassannet';
+    src: url('fonts/cassannet-webfont.eot');
+    src: url('fonts/cassannet-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cassannet-webfont.woff') format('woff'),
+         url('fonts/cassannet-webfont.ttf') format('truetype'),
+         url('fonts/cassannet-webfont.svg#BandaRegularRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* =Menu
@@ -1056,6 +1056,20 @@ embed,
 iframe,
 object {
 	max-width: 100%;
+}
+
+.single-nav {
+	clear: both;
+	padding: 2em 2em;
+	width: 100%;
+}
+
+.single-nav .single-nav-previous {
+	float: left;
+}
+
+.single-nav .single-nav-next {
+	float: right;
 }
 
 

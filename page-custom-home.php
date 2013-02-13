@@ -24,18 +24,18 @@ get_header(); ?>
 
 			<section class="design">
 					<article class="design-ribbon">
-						<h3>Design work</h3>
+						<h3>design work</h3>
 					</article>
 			</section>
 			
 			<section class="code">
 					<article class="code-ribbon">
-						<h3>Code work</h3>
+						<h3>code work</h3>
 					</article>				
 			</section>
 
 			<section class="about-ribbon">
-				<h3>About me</h3>
+				<h3>about me</h3>
 			</section>
 
 			<section class="about-description">
@@ -46,10 +46,10 @@ get_header(); ?>
 				<ul class="bb-custom-grid" id="bb-custom-grid">
 					<li>
 						<div class="bb-bookblock">
-							<div class="bb-item"><img src="<?php bloginfo ('template_url') ?>/img/logo3.jpg" alt="image01"/></div>
-							<div class="bb-item"><img src="<?php bloginfo ('template_url') ?>/img/logo4.jpg" alt="image02"/></div>
-							<div class="bb-item"><img src="<?php bloginfo ('template_url') ?>/img/logo2.jpg" alt="image03"/></div>
-							<div class="bb-item"><img src="<?php bloginfo ('template_url') ?>/img/logo1.jpg" alt="image04"/></div>
+							<div class="bb-item"><img src="<?php bloginfo ('template_url') ?>/img/design1.jpg" alt="image01"/></div>
+							<div class="bb-item"><img src="<?php bloginfo ('template_url') ?>/img/design2.jpg" alt="image02"/></div>
+							<div class="bb-item"><img src="<?php bloginfo ('template_url') ?>/img/design3.jpg" alt="image03"/></div>
+							<div class="bb-item"><img src="<?php bloginfo ('template_url') ?>/img/design4.jpg" alt="image04"/></div>
 						</div>
 						<nav>
 
