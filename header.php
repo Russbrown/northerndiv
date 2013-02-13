@@ -53,7 +53,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <?php wp_head(); ?>
 
 	<!-- load jquery library -->
-	 <script src="http://code.jquery.com/jquery-latest.js"></script>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 	 <!-- load modernizr -->
 	 <script src="<?php bloginfo('template_url'); ?>/js/modernizr-latest.js"></script>
@@ -63,6 +63,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 	<!-- load flyout css -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/flyout.css" />
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/flyout.js"></script>
 
 	<!-- load socialite -->
 	<script src="<?php bloginfo('template_url'); ?>/js/socialite.min.js"></script>
