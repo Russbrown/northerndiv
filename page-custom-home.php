@@ -9,7 +9,7 @@ get_header(); ?>
 			
 			<section class="banner">
 				<div id="galleria">
-					<img src="<?php bloginfo('template_url'); ?>/img/banner2.jpg">
+					<img src="<?php bloginfo('template_url'); ?>/img/banner2.jpg" alt="Made in Sheffield">
 				</div>
 			</section>
 

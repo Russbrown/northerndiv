@@ -20,13 +20,16 @@
 
 				// The Loop
 				while ( have_posts() ) : the_post();
+					echo '<ul>'
+					echo '<li>';
 					echo '<a href="';
 					echo get_permalink();
 					echo '">';
-					echo '<li>';
 					the_title();
-					echo '</li>';
 					echo '</a>';
+					echo '</li>';
+					echo '</ul>'
+					
 				endwhile;
 
 				// Reset Query
