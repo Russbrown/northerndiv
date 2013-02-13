@@ -58,12 +58,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	 <!-- load modernizr -->
 	 <script src="<?php bloginfo('template_url'); ?>/js/modernizr-latest.js"></script>
 
-	<!-- load weather jquery -->
-	<script src="<?php bloginfo('template_url') ?>/js/jquery.simpleweather.js" charset="utf-8"></script>
-
 	<!-- load font -->
-	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic|Raleway' rel='stylesheet' type='text/css'>
 
 	<!-- load flyout css -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/flyout.css" />

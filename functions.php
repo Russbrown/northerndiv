@@ -114,17 +114,9 @@ add_action( 'wp_enqueue_scripts', 'northerndiv_scripts' );
  */
 //require( get_template_directory() . '/inc/custom-header.php' );
 
-    /* socialite js */
-    
-    function load_socialite() {
-     
-        // Register Socialite
-        wp_register_script( 'socialite', get_template_directory_uri() . '/js/socialite.min.js', array(), '', true );
-        
-        // Register social initialiser script
-        wp_register_script( 'social', get_template_directory_uri() . '/js/social.js', array('jquery', 'socialite'), '', true );
-      
-        // Now enqueue Socialite
-        wp_enqueue_script( 'social' );
-    }
-    add_action( 'wp_enqueue_scripts', 'load_socialite' );
+    // use google not local jquery
+if( !is_admin()){
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"), false, '1.3.2');
+	wp_enqueue_script('jquery');
+}

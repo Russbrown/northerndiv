@@ -29,8 +29,7 @@ get_header(); ?>
 								photoshop or sticking my headphones in and bringing the designs to life with CSS, HTML and Javascript.
 								<p>If i'm not making stuff for clients I'm making fun stuff with friends. I'm constantly learning and applying new techniques and methods to create better designed, faster, 
 								more accessible websites.</p>
-								<div id="weather"></div>
-								<p>I live in <span class="weather-appear"> sunny </span> Sheffield and am always looking for new projects
+								<p>I live in sunny Sheffield and am always looking for new projects
 					 			so <a href="<?php echo home_url(); ?>/contact"> get in touch </a> and lets talk about yours.
 								</p>
 							</div>

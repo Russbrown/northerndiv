@@ -42,7 +42,7 @@
 
 					<!-- latest tweet is loaded here -->
 
-					<?php echo do_shortcode('[twitter-feed username="therusstler" num="1" followlink="no"]');?>
+					<?php echo do_shortcode('[twitter-feed username="therusstler" num="1" followlink="no" tweetintent="no"]');?>
 				
 				</div>
 				<!--
@@ -80,23 +80,6 @@
 	    // Number of times to display disclosure. Enter 0 to show it forever!!!!
 	    // The URI of your privacy policy
 	    cookiesDirective('bottom',1,'http://www.aboutcookies.org');
-	</script>
-
-	<script>
-	$(function() {			
-	    $.simpleWeather({
-	        zipcode: 'UKXX0133',
-	        unit: 'f',
-	        success: function(weather) {
-	            $("#weather").append('<h3>'+weather.city+', '+weather.region+'</h3>');
-	            $("#weather").append('<img style="float:left;" width="125px" src="'+weather.image+'">');
-	            $("#weather").append('<p>'+weather.temp+'&deg; '+weather.units.temp+'<br /><span>'+weather.currently+'</span></p>');
-	        },
-	        error: function(error) {
-	            $("#weather").html('<p>'+error+'</p>');
-	        }
-	    });
-	});
 	</script>
 
 </body>

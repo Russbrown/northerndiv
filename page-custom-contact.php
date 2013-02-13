@@ -12,7 +12,7 @@ Template Name: Custom Page Contact
 					<div id="contact-body">
 						<h3> Lets get started </h3>
 						<hr>
-						<p> I am currently available and accepting projects, contact me for
+						<p> I am currently <em>available</em> and accepting projects, contact me for
 						a quote on your project now. 
 						</p>
 					</div>
