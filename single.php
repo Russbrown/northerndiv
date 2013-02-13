@@ -21,10 +21,9 @@ get_header(); ?>
 					<li><a class="socialite linkedin-share" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title() ?>" rel="nofollow" target="_blank" data-url="<?php the_permalink() ?>" data-counter="top"><span class="vhidden">Share on LinkedIn</span></a></li>
 				</ul>
 
-
 				<section class="single-nav">
-				 <div class="single-nav-previous"><?php previous_post_link('%link', 'Previous post in category', TRUE); ?></div>
-				 <div class="single-nav-next"><?php next_post_link('%link', 'Next post in category', TRUE); ?></div>
+				 <div class="single-nav-previous"><?php previous_post_link('&laquo; %link', 'Previous post in category', TRUE); ?></div>
+				 <div class="single-nav-next"><?php next_post_link('%link &raquo', 'Next post in category', TRUE); ?></div>
 				</section>
 
 			<?php endwhile; // end of the loop. ?>

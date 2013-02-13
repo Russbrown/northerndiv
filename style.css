@@ -474,160 +474,10 @@ nav {
 	padding-top: 40px;
 }
 
-
-/* = Gallery
------------------------------------------------ */
-
-#galleria {
-	width: 100%;
-	height: auto;
-}
-
-.galleria-thumbnails-container {
-	display: none;
-}
-
-
-
-/* =About Section
------------------------------------------------ */
-
-.about-ribbon {
-	width: 319px;
-	height: 51px;
-	float: left;
-	background: #f2f2f2;
-	border-bottom: 1px solid #c3c3c3;
-	position: relative;
-	z-index: 1;
-}
-
-.about-ribbon h3 {
-	padding-top: 2px;
-	padding-left: 60px;
-	color: #434343;
-	margin: 0;
-}
-
-.about-description {
-	padding-top: 15px;
-	height: 328px;
-	width: 319px;
-	background: #f2f2f2;
-	float: right;
-	border-left: 1px solid #c3c3c3;
-	border-bottom: 1px solid #c3c3c3;
-}
-
-.about-description p {
-	color: #434343;
-	font-size: 1.4rem;
-	padding: 0px 60px;
-}
-
-
-
-/* =Design and code ribbons
------------------------------------------------ */
-
-.design h3, 
-.code h3 {
-	padding-top: 2px;
-	padding-left: 40px;
-	color: #434343;
-	padding-bottom: 7px;
-	margin: 0;
-	border-bottom: 1px solid #c3c3c3;
-}
-
-.code h3 {
-	padding-left: 30px;
-}
-
-.code-ribbon, 
-.design-ribbon {
-	width: 320px;
-	height: 52px;
-	background: #fff;
-	float: left;
-	z-index: 1;
-	position: relative;
-}
-
-.code-ribbon,
-.about-ribbon {
-	border-left: 1px solid #c3c3c3;
-	width: 319px;
-}
-
-/* = bb custom  grid
------------------------------------------------ */
-.bb-custom-grid {
-	float: left;
-	background: #fff;
-	border-bottom: 1px solid #c3c3c3;
-}
-
-.bb-custom-grid nav a  { 
-/* hide text but show to screen readers 
-http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
-	text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-}
-
-
 /* = flyout
 ----------------------------------------------- */
 #itemdescription h5 {
 	padding-top: 40px;
-}
-
-#weather {
-	display: none;
-	width: 100px;
-	position: relative;
-	top: -20px;
-	left: 10px;
-	background: #3399cc;
-	border-radius: 10px 10px ;
-	padding: 10px 10px;
-	font-size: 1.2rem;
-	text-align: center;
-}
-
-#weather:before {
-   content:"";
-   position: absolute;
-   width: 0;
-   height: 0;
-   border-top: 13px solid transparent;
-   border-left: 26px solid #3399cc;
-   border-bottom: 13px solid transparent;
-   margin: 144px 0 0 41px;
-      /* Rotate */
-   -webkit-transform: rotate(-30deg);
-   -moz-transform: rotate(-30deg);
-   -ms-transform: rotate(-30deg);
-   -o-transform: rotate(-30deg);
-   transform: rotate(-30deg);
-}
-
-#weather h3,
-#weather p,
-#weather img {
-	text-align: center;
-	margin: 0;
-	text-shadow: none;
-}
-
-#weather img {
-	padding-left: 15px;
-}
-
-.weather-appear {
-	cursor: pointer;
-	color: #3399cc;
 }
 
 /* = About me 
@@ -814,6 +664,55 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
   transform:rotate(40deg);
 }
 
+/* weather show/hide */
+
+#weather {
+	display: none;
+	width: 100px;
+	position: relative;
+	top: -20px;
+	left: 10px;
+	background: #3399cc;
+	border-radius: 10px 10px ;
+	padding: 10px 10px;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+#weather:before {
+   content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-left: 26px solid #3399cc;
+   border-bottom: 13px solid transparent;
+   margin: 144px 0 0 41px;
+      /* Rotate */
+   -webkit-transform: rotate(-30deg);
+   -moz-transform: rotate(-30deg);
+   -ms-transform: rotate(-30deg);
+   -o-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+}
+
+#weather h3,
+#weather p,
+#weather img {
+	text-align: center;
+	margin: 0;
+	text-shadow: none;
+}
+
+#weather img {
+	padding-left: 15px;
+}
+
+.weather-appear {
+	cursor: pointer;
+	color: #3399cc;
+}
+
 /* = Contact us
 ----------------------------------------------- */
 
@@ -824,12 +723,8 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
 }
 
 
-
 /* =Blog
 ----------------------------------------------- */
-
-
-
 .site-content-blog .post {
 	width: 60%;
 	padding: 20px 40px 0px;
@@ -837,7 +732,6 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
 
 .site-content-single {
 	width: 80%;
-	margin: 0 auto;
 	padding-bottom: 20px;
 }
 
@@ -863,6 +757,7 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
 .site-content-single .entry-title {
 	font-size: 2em;
 	margin-top: 40px;
+	padding-bottom: 20px;
 }
 
 .site-content-single .post img {
@@ -873,6 +768,7 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
 .post .entry-meta {
 	color: #c4c4c4;
 	padding-top: 3px;
+	padding-bottom: 20px;
 }
 
 .footer .entry-meta {
@@ -902,6 +798,9 @@ object {
 	clear: both;
 	padding: 2em 2em;
 	width: 100%;
+
+	font-size: 1.5em;
+	font-style: italic;
 }
 
 .single-nav .single-nav-previous {
