@@ -15,11 +15,10 @@ get_header(); ?>
 	  					<?php while (have_posts()) : the_post(); ?>
 	  					<div class="posts">
 
-	  						<!--
-	  						<h3 class="entry-title">
+	  						<h2 class="entry-title">
 	  							<?php the_title(); ?>
-	  						</h3>
-							-->
+	  						</h2>
+
 	  						<div class="entry-content">
 	  							
 	  							<?php
@@ -27,7 +26,7 @@ get_header(); ?>
 									  the_post_thumbnail();
 									}
 									?>
-	    					<!--	<?php the_content(); ?> -->
+	    						<?php the_content(); ?>
 	    					</div>
 						</div>
 	  				 	<?php endwhile; ?>
