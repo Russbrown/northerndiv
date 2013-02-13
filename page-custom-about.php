@@ -25,13 +25,23 @@ get_header(); ?>
 							<div id="label-body">
 								<h3> experience </h3>
 								<hr>
-								<p> I've been designing and building websites for two years,
-								ranging from artistic portfolios to robust e-commerce sites. I live
-								and breathe the web, whether that's designing a pixel perfect layout in 
-								photoshop or sticking my headphones in and bringing the designs to life through
-								wordpress.  
+								<p> I live and breathe the web, whether that's designing a pixel perfect layout in 
+								photoshop or sticking my headphones in and bringing the designs to life with CSS, HTML and Javascript.
+								<p>If i'm not making stuff for clients I'm making fun stuff with friends. I'm constantly learning and applying new techniques and methods to create better designed, faster, 
+								more accessible websites.</p>
+								<div id="weather"></div>
+								<p>I live in <span class="weather-appear"> sunny </span> Sheffield and am always looking for new projects
+					 			so <a href="<?php echo home_url(); ?>/contact"> get in touch </a> and lets talk about yours.
 								</p>
 							</div>
+
+							<script type="text/javascript">
+								$(document).ready(function(){
+										$(".weather-appear").click(function(){
+											$("#weather").toggle("slow");
+										});
+								});
+							</script>
 
 							<div id="labels">
 								<h3> Skills </h3>
@@ -46,34 +56,6 @@ get_header(); ?>
 									<li><span class="span7"></span>Photoshop</li>
 								</ul>
 							</div>
-
-			<section class="mission">
-
-				<div id="infinity">
-				</div>
-				
-				<h4> I'm obsessed with the web, if i'm not making stuff for clients I'm making fun stuff with friends.
-					I'm constantly learning and applying new techniques and methods to create better designed, faster, 
-					more accessible websites.
-				</h4>
-
-				<h4> This allows me to align beautiful design to a cutting edge product to serve your needs perfectly. </h4>
-
-				<div id="weather"></div>
-
-				<h4> I live in <span class="weather-appear"> sunny </span> Sheffield and am always looking for new projects
-					 so <a href="<?php echo home_url(); ?>/contact"> get in touch </a> and lets talk about yours. 
-				</h4>
-
-				<script type="text/javascript">
-					$(document).ready(function(){
-							$(".weather-appear").click(function(){
-								$("#weather").toggle("slow");
-							});
-					});
-				</script>
-
-			</section>
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->

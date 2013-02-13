@@ -35,13 +35,7 @@ get_header(); ?>
 
 					<?php endwhile; ?>
 
-					<?php northerndiv_content_nav( 'nav-below' ); ?>
-
-				<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
-
-					<?php get_template_part( 'no-results', 'index' ); ?>
-
-				<?php endif; ?>
+					<?php endif; ?>
 
 			</div><!-- #content .site-content -->
 

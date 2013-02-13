@@ -9,8 +9,6 @@
 	 */
 	?>
 
-		</div><!-- #main .site-main -->
-
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			
 			<section class="blog-links">
@@ -66,19 +64,10 @@
 
 
 		</footer><!-- #colophon .site-footer -->
-	</div><!-- #page .hfeed .site -->
-</div> <!-- end #container -->
-<?php wp_footer(); ?>
 
-<!-- jquery masonry -->
-	<script>
-	$(function(){
-	  $('.site-content-blog').masonry({
-	    // options
-	    itemSelector : '.post'
-	  });
-	});
-	</script>
+	</div><!-- #page .hfeed .site -->
+
+</div> <!-- end #container -->
 
 <!-- the cookies directive notifier -->
 	<script type="text/javascript">
@@ -90,7 +79,24 @@
 	    // The position of the disclosure ('top' or 'bottom')
 	    // Number of times to display disclosure. Enter 0 to show it forever!!!!
 	    // The URI of your privacy policy
-	    cookiesDirective('top',1,'http://www.aboutcookies.org');
+	    cookiesDirective('bottom',1,'http://www.aboutcookies.org');
+	</script>
+
+	<script>
+	$(function() {			
+	    $.simpleWeather({
+	        zipcode: 'UKXX0133',
+	        unit: 'f',
+	        success: function(weather) {
+	            $("#weather").append('<h3>'+weather.city+', '+weather.region+'</h3>');
+	            $("#weather").append('<img style="float:left;" width="125px" src="'+weather.image+'">');
+	            $("#weather").append('<p>'+weather.temp+'&deg; '+weather.units.temp+'<br /><span>'+weather.currently+'</span></p>');
+	        },
+	        error: function(error) {
+	            $("#weather").html('<p>'+error+'</p>');
+	        }
+	    });
+	});
 	</script>
 
 </body>

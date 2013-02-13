@@ -60,29 +60,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 	<!-- load weather jquery -->
 	<script src="<?php bloginfo('template_url') ?>/js/jquery.simpleweather.js" charset="utf-8"></script>
-	<script>
-	$(function() {			
-	    $.simpleWeather({
-	        zipcode: 'UKXX0133',
-	        unit: 'f',
-	        success: function(weather) {
-	            $("#weather").append('<h3>'+weather.city+', '+weather.region+'</h3>');
-	            $("#weather").append('<img style="float:left;" width="125px" src="'+weather.image+'">');
-	            $("#weather").append('<p>'+weather.temp+'&deg; '+weather.units.temp+'<br /><span>'+weather.currently+'</span></p>');
-	        },
-	        error: function(error) {
-	            $("#weather").html('<p>'+error+'</p>');
-	        }
-	    });
-	});
-	</script>
-
-	<!-- load masonry -->
-	<script src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.min.js"></script>
-
-	<!-- load galleria -->
-	<script src="<?php bloginfo('template_url'); ?>/js/galleria/galleria-1.2.8.min.js"></script>
-	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/galleria/themes/classic/galleria.classic.css">
 
 	<!-- load bookblock -->
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.79639.js"></script>

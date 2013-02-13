@@ -9,17 +9,8 @@ get_header(); ?>
 			
 			<section class="banner">
 				<div id="galleria">
-					<img src="<?php bloginfo('template_url'); ?>/img/banner1.jpg">
-					<img src="<?php bloginfo('template_url'); ?>/img/banner3.jpg">
 					<img src="<?php bloginfo('template_url'); ?>/img/banner2.jpg">
 				</div>
-				<script>
-					Galleria.loadTheme('<?php bloginfo('template_url'); ?>/js/galleria/themes/classic/galleria.classic.min.js');
-					Galleria.run('#galleria', {
-						height: 260,
-						autoplay: 5000 // will move forward very 7 seconds
-					});
-				</script>
 			</section>
 
 			<section class="design">
