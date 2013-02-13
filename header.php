@@ -63,7 +63,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 	<!-- load flyout css -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/flyout.css" />
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/flyout.js"></script>
 
 	<!-- load socialite -->
 	<script src="<?php bloginfo('template_url'); ?>/js/socialite.min.js"></script>

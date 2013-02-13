@@ -14,6 +14,7 @@ get_header(); ?>
 			</section>
 
 			<section>
+				<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/flyout.js"></script>
 				<div id="flyout-container">
 					<!--[if IE]>
 						<a href="http://www.browsehappy.com"><h2> Something cool should be here, to see it please upgrade to a modern browser </h2></a>
@@ -49,7 +50,7 @@ get_header(); ?>
 				    <!-- to n description -->
 				  </div>
 				</div>
-				<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/flyout.js"></script>
+				
 				<script>
 					//Initiliaze
 					var itemList, item, className, thisItem, newOrder, itemDesc, desc;

@@ -69,8 +69,6 @@
 
 </div> <!-- end #container -->
 
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/flyout.js"></script>
-
 <!-- the cookies directive notifier -->
 	<script type="text/javascript">
 	    function cookiesDirectiveScriptWrapper(){

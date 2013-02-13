@@ -128,3 +128,19 @@ add_action( 'wp_enqueue_scripts', 'northerndiv_scripts' );
         wp_enqueue_script( 'social' );
     }
     add_action( 'wp_enqueue_scripts', 'load_socialite' );
+
+
+function my_init() {
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery'); 
+		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js', false, '1.5'); 
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'my_init');
+
+
+
+
+
