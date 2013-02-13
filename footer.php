@@ -67,8 +67,6 @@
 
 	</div><!-- #page .hfeed .site -->
 
-</div> <!-- end #container -->
-
 <!-- the cookies directive notifier -->
 	<script type="text/javascript">
 	    function cookiesDirectiveScriptWrapper(){

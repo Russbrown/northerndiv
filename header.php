@@ -69,8 +69,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 </head>
 
-<div id="container">
-
 	<body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 		<?php do_action( 'before' ); ?>
@@ -90,4 +88,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 			</hgroup>
 
 		</header><!-- #masthead .site-header -->
-		<div id="main" class="site-main">
+
+
+
+
