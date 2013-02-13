@@ -10,7 +10,7 @@ Template Name: Custom Page Contact
 			<div id="content" class="site-content" role="main">
 
 					<div id="contact-body">
-						<h3> lets get started </h3>
+						<h3> Lets get started </h3>
 						<hr>
 						<p> I am currently available and accepting projects, contact me for
 						a quote on your project now. 

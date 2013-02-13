@@ -61,10 +61,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	<!-- load weather jquery -->
 	<script src="<?php bloginfo('template_url') ?>/js/jquery.simpleweather.js" charset="utf-8"></script>
 
-	<!-- load bookblock -->
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.custom.79639.js"></script>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bookstyle.css" />
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/custom2.css" />
+	<!-- load font -->
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 	<!-- load flyout css -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/flyout.css" />

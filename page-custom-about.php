@@ -7,7 +7,7 @@ get_header(); ?>
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content" role="main">
 
-				<h1> about me </h1>
+				<h1> About me </h1>
 
 				<div class="pieContainer">
 					<!--[if lt IE 9]>
@@ -23,7 +23,7 @@ get_header(); ?>
 				</div>
 
 							<div id="label-body">
-								<h3> experience </h3>
+								<h3> Experience </h3>
 								<hr>
 								<p> I live and breathe the web, whether that's designing a pixel perfect layout in 
 								photoshop or sticking my headphones in and bringing the designs to life with CSS, HTML and Javascript.

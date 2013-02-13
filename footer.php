@@ -12,7 +12,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			
 			<section class="blog-links">
-				<h3> from the blog</h3>
+				<h3> From the blog</h3>
 				<?php
 
 				// The Query
@@ -36,7 +36,7 @@
 			</section>
 
 			<section class="twitter-links">
-				<h3> from the twitter</h3>
+				<h3> From the twitter</h3>
 				
 				<div class="latest-tweet">
 
@@ -53,7 +53,7 @@
 			</section>
 
 			<section class="fun-projects">
-				<h3> fun projects </h3>
+				<h3> Fun projects </h3>
 					<ul>
 						<li><a href="http://www.sheftype.co.uk">Sheftype</a></li>
 

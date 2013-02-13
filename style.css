@@ -104,8 +104,8 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: 'Banda', sans-serif;
-	font-size: 14px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 12px;
 	line-height: 1.5;
 }
 
@@ -151,8 +151,10 @@ HEADER
 *******************************************************************************************/
 
 #masthead {
-	height: 135px;
+	height: 90px;
 	border-bottom: 3px solid #434343;
+background: #f7f7f7; /* Old browsers */
+
 }
 
 #masthead h1 {
@@ -365,68 +367,42 @@ textarea {
 /* Headings */
 
 h1 {
-	font-size: 4.4rem;
-	font-family: 'cassannet', sans-serif;
-	line-height: 6.3rem;
+	font-size: 2em;
+	font-family: 'Raleway', sans-serif;
     margin-top: 21px;
-    margin-bottom: 42px;
 }
 
 h2 {
-	font-size: 2.5rem;
-	line-height: 6.3rem;
-	font-family: 'Banda', sans-serif;
+	font-size: 1.5em;
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
 }
 
 h3 {
-	font-family: 'cassannet', sans-serif;
-	font-size: 2.5rem;
-	line-height: 4.2rem;
-	margin-top: 42px;
-    margin-bottom: 21px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
 	text-shadow: 0px 1px 1px #c3c3c3;
 }
 
 h4 {
-	font-family: 'Banda', sans-serif;
-	font-size: 1.9rem;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.5em;
 }
 
 h5 {
-	font-family: 'banda', sans-serif;
-	font-size: 1.4rem;
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	font-size: 0.6em;
 	line-height: 3.2rem;
-}
-
-@font-face {
-    font-family: 'Banda';
-    src: url('fonts/regular-webfont.eot');
-    src: url('fonts/regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/regular-webfont.woff') format('woff'),
-         url('fonts/regular-webfont.ttf') format('truetype'),
-         url('fonts/regular-webfont.svg#BandaRegularRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Cassannet';
-    src: url('fonts/cassannet-webfont.eot');
-    src: url('fonts/cassannet-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/cassannet-webfont.woff') format('woff'),
-         url('fonts/cassannet-webfont.ttf') format('truetype'),
-         url('fonts/cassannet-webfont.svg#BandaRegularRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* =Menu
 ----------------------------------------------- */
 
 nav {
-	font-family: 'cassannet', sans-serif;
-	font-size: 2.1rem;
-	padding-top: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	padding-top: 20px;
 }
 
 #menu-nav li:hover {
@@ -606,59 +582,6 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
 #itemdescription h5 {
 	padding-top: 40px;
 }
-
-
-/* =Mission Section
------------------------------------------------ */
-
-.mission {
-	padding: 60px 40px;
-	border-top: 1px solid #c9c9c9;
-	clear: both;
-}
-
-.mission h4 {
-	padding-bottom: 40px;
-}
-
-#infinity {
-    position: relative;
-    width: 212px;
-    height: 100px;
-    margin: 0 auto;
-    padding-bottom: 60px;
-}
-
-#infinity:before,
-#infinity:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;    
-    border: 20px solid #188fd9;
-    -moz-border-radius: 50px 50px 0 50px;
-         border-radius: 50px 50px 0 50px;
-    -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-}
-
-#infinity:after {
-    left: auto;
-    right: 0;
-    -moz-border-radius: 50px 50px 50px 0;
-         border-radius: 50px 50px 50px 0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-}
-
 
 #weather {
 	display: none;
@@ -891,39 +814,11 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
   transform:rotate(40deg);
 }
 
-
-/* =Content
------------------------------------------------ */
-
-.sticky {
-}
-.entry-meta {
-	clear: both;
-}
-.byline {
-	display: none;
-}
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
-
-
-
 /* = Contact us
 ----------------------------------------------- */
 
 #contact-body {
-	position: relative;
-	top: 73px;
+	padding-top: 70px;
 	float: right;
 	width: 400px;
 }
@@ -955,7 +850,7 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
 }
 
 .site-content-blog .post .entry-title {
-	font-size: 24px;
+	font-size: 1.5em;
 	line-height: 24px;
 	margin-bottom: 10px;
 	margin-top: 0px;
@@ -966,7 +861,7 @@ http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacemen
 }
 
 .site-content-single .entry-title {
-	font-size: 32px;
+	font-size: 2em;
 	margin-top: 40px;
 }
 
@@ -1128,7 +1023,7 @@ footer {
 
 footer h3 {
 	color: #4c4c4c;
-	padding: 0 40px;
+	padding: 20px 40px;
 }
 
 .twitter-links,
@@ -1160,7 +1055,7 @@ footer h3 {
 .blog-links li,
 .fun-projects li {
 	list-style: none;
-	font-family: 'banda', sans-serif;
+	font-style: italic;
 	font-size: 14px;
 	padding: 0px 40px 15px;
 	color: #4c4c4c;
@@ -1223,21 +1118,6 @@ footer h3 {
  
 .vhidden {
 	border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; 
-}
-
-
-/* =Media Queries
------------------------------------------------ */
-
-@media screen and (max-width: 720px) {
-	.site-title {
-		font-size:2.6rem;
-	}
-
-	.site-description {
-		font-size:1.8rem;
-	}
-
 }
 
 
