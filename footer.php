@@ -20,7 +20,7 @@
 
 				// The Loop
 				while ( have_posts() ) : the_post();
-					echo '<ul>'
+					echo '<ul>';
 					echo '<li>';
 					echo '<a href="';
 					echo get_permalink();
@@ -28,7 +28,7 @@
 					the_title();
 					echo '</a>';
 					echo '</li>';
-					echo '</ul>'
+					echo '</ul>';
 					
 				endwhile;
 
