@@ -16,6 +16,8 @@ get_header(); ?>
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content-blog" role="main">
 
+				<?php get_sidebar() ?>
+
 				<?php if ( have_posts() ) : ?>
 
 				<?php query_posts('category_name=blog&posts_per_page=20'); ?>
