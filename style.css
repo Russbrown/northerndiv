@@ -911,6 +911,147 @@ object {
 	display: none;
 }
 
+/*********************************************
+Fancy Twitter button -- thanks to Tim Holman --> https://github.com/tholman/discreet-twitter-ui
+ *********************************************/
+ @font-face {
+	font-family: 'tweet';
+	src:url('font/tweet.eot');
+	src:url('font/tweet.eot?#iefix') format('embedded-opentype'),
+		url('font/tweet.woff') format('woff'),
+		url('font/tweet.ttf') format('truetype'),
+		url('font/tweet.svg#tweet') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Effect Related */
+
+.hole {
+
+	-webkit-transition: background 300ms ease-in-out;
+	   -moz-transition: background 300ms ease-in-out;
+	    -ms-transition: background 300ms ease-in-out;
+	     -o-transition: background 300ms ease-in-out;
+			transition: background 300ms ease-in-out;
+
+	/* Font smoothing + HW acceleration for webkit */
+	-webkit-font-smoothing: antialiased;
+	-webkit-transform: translateZ(0px);
+
+	/* Centering */
+  	position: absolute;
+	margin-top: 35px;
+
+	width: 200px;
+	height: 50px;
+}
+
+.twitter-follow-button {
+	margin-left: -77px;
+	position: absolute;
+	margin-top: -14px;
+	left: 50%;
+	top: 50%;
+}
+
+.door {
+
+	-webkit-transition-timing-function: ease-in-out;
+	   -moz-transition-timing-function: ease-in-out;
+		-ms-transition-timing-function: ease-in-out;
+		 -o-transition-timing-function: ease-in-out;
+		    transition-timing-function: ease-in-out;
+
+	position: absolute;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.door:after {
+	font-family: 'tweet', sans-serif;
+	position: absolute;
+	content: "\e000";
+	font-size: 35px;
+	display: block;
+	height: 20px;
+	width: 0px;
+}
+
+.top-doors {
+
+}
+
+/* Stationary CSS */
+.top-doors .hole {
+
+	box-shadow: inset -7px 0px 12px -8px rgba(0,0,0,0.3),
+	            inset 7px 0px 12px -8px rgba(0,0,0,0.3);
+
+	background: rgba(0,0,0,0.3);
+}
+
+.top-doors .door {
+
+	-webkit-transition: top 400ms, box-shadow 200ms, -webkit-transform 300ms;
+	   -moz-transition: top 400ms, box-shadow 200ms, -moz-transform 300ms;
+		-ms-transition: top 400ms, box-shadow 200ms, -ms-transform 300ms;
+		 -o-transition: top 400ms, box-shadow 200ms, -o-transform 300ms;
+			transition: top 400ms, box-shadow 200ms, transform 300ms;
+
+	background-color: #fff;
+	width: 100%;
+	height: 50%;
+}
+
+.top-doors .door:after {
+	margin-left: -20px;
+	color: #4099FF; 
+	left: 52%;
+}
+
+.top-doors .top {
+	left: 0px;
+	top: 0%;
+}
+
+.top-doors .top:after {
+    top: 5px;
+}
+
+.top-doors .bottom {
+	top: 50%;
+	left: 0px;
+}
+
+.top-doors .bottom:after {
+	top: -20px;
+}
+
+/* Effects on Hover */
+
+.top-doors .hole:hover {
+	background: #fff;
+}
+
+.top-doors .hole:hover .door {
+	box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.4);
+    
+    -webkit-transform: scale(1.08);
+       -moz-transform: scale(1.08);
+		-ms-transform: scale(1.08);
+		 -o-transform: scale(1.08);
+			transform: scale(1.08);
+}
+
+.top-doors .hole:hover .top {
+	top: -50%;
+}
+
+.top-doors .hole:hover .bottom {
+	top: 100%;
+}
+
 
 /* =Comments
 ----------------------------------------------- */

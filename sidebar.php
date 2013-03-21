@@ -10,25 +10,16 @@
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
-				<aside id="search" class="widget widget_search">
-					<?php get_search_form(); ?>
-				</aside>
 
-				<aside id="archives" class="widget">
-					<h1 class="widget-title"><?php _e( 'Archives', 'northerndiv' ); ?></h1>
-					<ul>
-						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-					</ul>
-				</aside>
-
-				<aside id="meta" class="widget">
-					<h1 class="widget-title"><?php _e( 'Meta', 'northerndiv' ); ?></h1>
-					<ul>
-						<?php wp_register(); ?>
-						<li><?php wp_loginout(); ?></li>
-						<?php wp_meta(); ?>
-					</ul>
-				</aside>
 
 			<?php endif; // end sidebar widget area ?>
+
+		<div class="top-doors">
+			<div class="hole">
+  				<div class="door top"></div>
+  				<div class="door bottom"></div>
+  				<a href="https://twitter.com/therusstler" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="false">Follow @therusstler</a>
+			</div>
+		</div>
+
 		</div><!-- #secondary .widget-area -->
