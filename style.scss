@@ -733,9 +733,8 @@ nav {
 ----------------------------------------------- */
 
 #contact-body {
-	padding-top: 70px;
-	float: right;
-	width: 50%;
+	float: left;
+	width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -747,8 +746,14 @@ nav {
 	}
 }
 
+.post-121 {
+	float: left;
+	width: 100%;
+}
+
 .wpcf7-form {
 	width: 80%;
+	float: left;
 	p {
 		width: 100%;
 		clear: both;
