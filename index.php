@@ -26,13 +26,19 @@ get_header(); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<header class="entry-header">
-							<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-
-							<div class="entry-summary">
-								<?php the_excerpt(); ?>
-							</div><!-- .entry-summary -->
-							</header><!-- .entry-header -->
+							<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
+								<header class="entry-header">
+								<h1 class="entry-title"><?php the_title(); ?></h1>
+								</header><!-- .entry-header -->
+								<div class="entry-summary">
+									<?php 
+									if ( has_post_thumbnail() ) {
+										the_post_thumbnail();
+									}  
+									the_excerpt(); 
+									?>
+								</div><!-- .entry-summary -->
+							</a>
 						</article>
 
 					<?php endwhile; ?>

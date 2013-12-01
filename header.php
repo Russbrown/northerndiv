@@ -36,39 +36,25 @@
 
 <?php wp_head(); ?>
 
-	<!-- load jquery library -->
-	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-
 	 <!-- load modernizr -->
 	 <script src="<?php bloginfo('template_url'); ?>/js/modernizr-latest.js"></script>
-
 	<!-- load font -->
 	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic|Raleway' rel='stylesheet' type='text/css'>
 
-	<!-- load flyout css -->
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/flyout.css" />
+	<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
 
-	<!-- load socialite -->
-	<script src="<?php bloginfo('template_url'); ?>/js/socialite.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 </head>
 
 	<body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
 		<?php do_action( 'before' ); ?>
-
-		<nav role="navigation" class="site-navigation main-navigation">
-			<h1 class="assistive-text"><?php _e( 'Menu', 'northerndiv' ); ?></h1>
-			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'northerndiv' ); ?>"><?php _e( 'Skip to content', 'northerndiv' ); ?></a></div>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- .site-navigation .main-navigation -->
 		
 		<header id="masthead" class="site-header" role="banner">
 
 			<hgroup>
 				<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo ('description') ?></h2>
 			</hgroup>
 
 		</header><!-- #masthead .site-header -->

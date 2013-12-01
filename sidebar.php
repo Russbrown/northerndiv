@@ -7,19 +7,19 @@
  */
 ?>
 		<div id="secondary" class="widget-area" role="complementary">
-			<?php do_action( 'before_sidebar' ); ?>
-			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
-
-
-			<?php endif; // end sidebar widget area ?>
-
-		<div class="top-doors">
-			<div class="hole">
-  				<div class="door top"></div>
-  				<div class="door bottom"></div>
-  				<a href="https://twitter.com/therusstler" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="false">Follow @therusstler</a>
+			<div class="sidebar-contact">
+				<h3> Want to talk to me? </h3>
+					<ul class="fa-ul">
+						<li><a href="http://www.twitter.com/therusstler"><i class="fa-li fa fa-twitter fa-2x"></i>@therusstler</a></li>
+						<li><a href="/contact"><i class="fa-li fa fa-envelope fa-2x"></i>Email some words to me</a></li>
+					</ul>
 			</div>
-		</div>
+
+			<div class="sidebar-twitter">
+				<h3> What am I on about?</h3>
+					<!-- latest tweet is loaded here -->
+					<a class="twitter-timeline"  href="https://twitter.com/therusstler"  data-widget-id="342259860068528128">Tweets by @therusstler</a>
+			</div>
 
 		</div><!-- #secondary .widget-area -->

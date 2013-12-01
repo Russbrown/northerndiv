@@ -375,8 +375,8 @@ textarea {
 /* Headings */
 
 h1 {
-	font-size: 2em;
-	font-family: 'Raleway', sans-serif;
+	font-size: 4em;
+	font-family: 'Iceland', sans-serif;
     margin-top: 21px;
 }
 
@@ -387,9 +387,8 @@ h2 {
 }
 
 h3 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.5em;
-	text-shadow: 0px 1px 1px #c3c3c3;
+	font-family: 'Iceland', sans-serif;
+	font-size: 2em;
 }
 
 h4 {
@@ -399,8 +398,7 @@ h4 {
 
 h5 {
 	font-family: 'Libre Baskerville', serif;
-	font-style: italic;
-	font-size: 0.6em;
+	font-size: 0.5em;
 	line-height: 3.2rem;
 }
 
@@ -728,6 +726,15 @@ nav {
 
 /* =Blog
 ----------------------------------------------- */
+.post .entry-summary {
+	color: #777;
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
 .site-content-blog .post {
 	width: 60%;
 	padding: 20px 40px 0px;
@@ -747,7 +754,7 @@ nav {
 }
 
 .site-content-blog .post .entry-title {
-	font-size: 1.5em;
+	font-size: 2em;
 	line-height: 24px;
 	margin-bottom: 10px;
 	margin-top: 0px;
@@ -772,10 +779,6 @@ nav {
 	color: #c4c4c4;
 	padding-top: 3px;
 	padding-bottom: 20px;
-}
-
-.footer .entry-meta {
-	color: #c4c4c4;
 }
 
 .post h4 a {
@@ -848,7 +851,6 @@ object {
 	padding: 5px 0;
 	background: #369EB5;
 	color: #f1f1f1;
-	text-shadow: 0px 1px 1px #000;
 	text-align: center;
 }
 
@@ -885,25 +887,18 @@ object {
 
 #secondary {
 	float: right;
-	width: 250px;
-}
-.widget h1 {
-	margin-top: 15px;
-	line-height: 40px;
-	padding-top: 5px;
-}
-.widget-title {
-	font-size: 2.1rem;
-	padding-left: 20px;
-	background: #FF5721;
-	margin-bottom: 0px;
-}
-
-.widget ul li {
-	list-style: none;
-	padding: 30px 30px;
-	border-bottom: 1px solid #ccc;
-	background: #f1f1f1;
+	width: 30%;
+	h3 {
+		padding: 1em 0;
+	}
+	li {
+		list-style-type: none;
+		padding: 0.5em 0;
+		margin-left: 2em;
+	}
+	iframe {
+		width: 90%;
+	}
 }
 
 /* Search widget */
@@ -1064,111 +1059,18 @@ Fancy Twitter button -- thanks to Tim Holman --> https://github.com/tholman/disc
 /* =Footer
 ----------------------------------------------- */
 
-.site-footer {
-	height: 180px;
-	margin-bottom: 40px;
-
-	-moz-box-shadow:    inset 0 0 2px #777;
-    -webkit-box-shadow: inset 0 0 2px #777;
-    box-shadow:         inset 0 0 2px #777;
-    background: #f1f1f1;
-}
-
 footer {
 	clear: both;
-}
-
-footer h3 {
-	color: #4c4c4c;
-	padding: 20px 40px;
-}
-
-.twitter-links,
-.fun-projects,
-.blog-links 
- {
- 	border-top: 3px solid #4c4c4c;
- 	width: 320px;
-	float: left;
-	margin-bottom: 40px;
+	h3 {
+		font-size: 1em;
+		padding: 1em 3em;
+	}
 }
 
 .connect-ribbon img {
 	float: left;
 	padding-left: 40px;
 	padding-top: 9px;
-}
-
-.blog-links {
-	color: #4c4c4c;
-	
-}
-
-.blog-links h2 {
-	color: #4c4c4c;
-}
-
-.blog-links li,
-.fun-projects li {
-	list-style: none;
-	font-style: italic;
-	font-size: 14px;
-	padding: 0px 40px 15px;
-	color: #4c4c4c;
-}
-
-.blog-links li a,
-.fun-projects li a,
-.twitter-links li a {
-	color: #4c4c4c;
-}
-
-.latest-tweet {
-	padding-left: 40px;
-	width: 275px;
-}
-
-.latest-tweet ul li a {
-	color: #3399cc;
-}
-
-/* =Socialite Look-a-like defaults
- ------------------------------------------ */
- 
-.social-buttons { 
-	display: block; list-style: none; padding: 0; margin: 20px;
-}
-
-.social-buttons > li { 
-	display: block; margin: 0; padding: 10px; float: left; 
-}
-
-.social-buttons .socialite { 
-	display: block; position: relative; background: url('img/social-sprite.png') 0 0 no-repeat; 
-}
-
-.social-buttons .socialite-loaded { 
-	background: none !important; 
-}
- 
-.social-buttons .twitter-share { 
-	width: 55px; height: 65px; background-position: 0 0; 
-}
-
-.social-buttons .googleplus-one {
-	width: 50px; height: 65px; background-position: -75px 0; 
-}
-
-.social-buttons .facebook-like {
-	width: 50px; height: 65px; background-position: -145px 0; 
-}
-
-.social-buttons .linkedin-share {
-	width: 60px; height: 65px; background-position: -215px 0; 
-}
- 
-.vhidden {
-	border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; 
 }
 
 
