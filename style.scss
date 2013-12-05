@@ -787,6 +787,7 @@ nav {
 .site-content-single {
 	width: 80%;
 	padding-bottom: 20px;
+	display: block;
 }
 
 .site-content-single .post {
@@ -795,6 +796,10 @@ nav {
 	float: none;
 	background: none;
 	height: 100%;
+	display: block;
+	img {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 600px) {

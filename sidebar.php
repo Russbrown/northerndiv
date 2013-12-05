@@ -11,6 +11,7 @@
 			<div class="sidebar-contact">
 				<h3> Want to talk to me? </h3>
 					<ul class="fa-ul">
+						<li><a href="https://github.com/Russbrown"><i class="fa-li fa fa-github fa-2x"></i>Github</a></li>
 						<li><a href="http://www.twitter.com/therusstler"><i class="fa-li fa fa-twitter fa-2x"></i>@therusstler</a></li>
 						<li><a href="/contact"><i class="fa-li fa fa-envelope fa-2x"></i>Email some words to me</a></li>
 					</ul>
