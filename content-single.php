@@ -22,3 +22,7 @@
 						<div class="previous"><?php previous_post('%', '<', 'no'); ?></div> 
 
 						<div class="next"><?php next_post('%', '>', 'no'); ?></div>
+
+						<div class="contact">
+							<a href="http://www.twitter.com/therusstler">Tweet me</a>
+						</div>
