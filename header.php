@@ -37,27 +37,19 @@
 <?php wp_head(); ?>
 
 	 <!-- load modernizr -->
-	 <script src="<?php bloginfo('template_url'); ?>/js/modernizr-latest.js"></script>
-	<!-- load font -->
-	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic|Raleway' rel='stylesheet' type='text/css'>
 
-	<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
-
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
 
 </head>
 
 	<body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
+
 		<?php do_action( 'before' ); ?>
-		
+<!-- -->
+
 		<header id="masthead" class="site-header" role="banner">
-
-			<hgroup>
-				<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h3 class="site-description"><?php bloginfo( 'description' ); ?></h3>
-			</hgroup>
-
+			<div class="logo"></div>
 		</header><!-- #masthead .site-header -->
 
 

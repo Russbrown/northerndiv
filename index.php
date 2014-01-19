@@ -16,40 +16,33 @@ get_header(); ?>
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content-blog" role="main">
 
-				<?php get_sidebar() ?>
-
 				<?php if ( have_posts() ) : ?>
-
-				<?php query_posts('category_name=blog&posts_per_page=20'); ?>
 
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
-								<header class="entry-header">
-								<h1 class="entry-title"><?php the_title(); ?></h1>
-								</header><!-- .entry-header -->
-								<div class="entry-summary">
-									<?php 
-									if ( has_post_thumbnail() ) {
-										the_post_thumbnail();
-									}  
-									the_excerpt(); 
-									?>
-								</div><!-- .entry-summary -->
-							</a>
+							<?php if ( has_post_thumbnail() ) {
+								the_post_thumbnail();
+							} ?>
+							<h1><?php the_title();?></h1>
+							<?php the_content();?>
 						</article>
+
+						<div class="previous"><?php previous_post('%', '<', 'no'); ?></div> 
+
+						<div class="next"><?php next_post('%', '>', 'no'); ?></div>
 
 					<?php endwhile; ?>
 
 					<?php endif; ?>
 
+					<div class="contact">
+						<a href="http://www.twitter.com/therusstler">Tweet me</a>
+					</div>
+
 			</div><!-- #content .site-content -->
 
 		</div><!-- #primary .content-area -->
-
-		<!-- Twitter Buttons -->
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <?php get_footer(); ?>

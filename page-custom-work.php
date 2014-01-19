@@ -7,36 +7,28 @@ get_header(); ?>
 		<div id="primary" class="content-area">
 			<div id="content" class="site-content" role="main">
 
-			<div class="work-post">
-					<?php if (have_posts()) : ?>
+				<?php if ( have_posts() ) : ?>
 
-					<?php query_posts('category_name=work&posts_per_page=10'); ?>
+				<?php query_posts('category_name=infographics') ?>
 
-	  					<?php while (have_posts()) : the_post(); ?>
-	  					<div class="posts">
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-	  						<h2 class="entry-title">
-	  							<?php the_title(); ?>
-	  						</h2>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<?php if ( has_post_thumbnail() ) {
+								the_post_thumbnail();
+							} ?>
+							<h1><?php the_title();?></h1>
+							<?php the_content();?>
+						</article>
 
-	  						<div class="entry-content">
-	  							
-	  							<?php
-									if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-									  the_post_thumbnail();
-									}
-									?>
-	    						<?php the_content(); ?>
-	    					</div>
-						</div>
-	  				 	<?php endwhile; ?>
+						<div class="previous"><?php previous_post('%', '<', 'no'); ?></div> 
 
-	  				<?php else : ?>
+						<div class="next"><?php next_post('%', '>', 'no'); ?></div>
 
-	  				<?php _e("Sorry, but you are looking for something that isn't here."); ?>
+					<?php endwhile; ?>
 
-	  				<?php endif; ?>
-  			</div>
+					<?php endif; ?>
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->

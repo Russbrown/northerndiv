@@ -6,14 +6,19 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<?php the_post_thumbnail(); ?>
-	</header><!-- .entry-header -->
+	<?php 
+		if ( has_post_thumbnail() ) {
+			the_post_thumbnail();
+	} ?>
+	<h1><?php the_title(); ?></h1>
+		<?php
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'northerndiv' ), 'after' => '</div>' ) ); ?>
-	</div><!-- .entry-content -->
+		the_content();
+	?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
+
+
+						<div class="previous"><?php previous_post('%', '<', 'no'); ?></div> 
+
+						<div class="next"><?php next_post('%', '>', 'no'); ?></div>
