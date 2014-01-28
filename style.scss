@@ -440,6 +440,16 @@ textarea {
 			font-size: 1.4em;
 			line-height: 1.4em;
 		}
+		.meta {
+
+		}
+		.post-categories li {
+			list-style: none;
+		}
+		.author {
+			float: left;
+			margin-right: 2px;
+		}
 	}
 }
 
@@ -447,7 +457,7 @@ textarea {
 	.site-content-blog {
 		article {
 			width: 40%;
-			height: 330px;
+			height: 360px;
 			padding: 0%;
 			margin-right: 10%; 
 			float: left;

@@ -24,6 +24,10 @@ get_header(); ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<h1><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title();?></a></h1>
 							<?php the_excerpt();?>
+							<div class="meta">
+								<span class="author">By <?php the_author(); ?> in</span>
+								<?php the_category(); ?>
+							</div>
 						</article>
 
 					<?php endwhile; ?>
