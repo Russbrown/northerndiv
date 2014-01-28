@@ -18,7 +18,7 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'northerndiv' ) ); ?>
+		<?php the_excerpt(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'northerndiv' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
@@ -30,9 +30,6 @@
 				$categories_list = get_the_category_list( __( ', ', 'northerndiv' ) );
 				if ( $categories_list && northerndiv_categorized_blog() ) :
 			?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'northerndiv' ), $categories_list ); ?>
-			</span>
 			<?php endif; // End if categories ?>
 
 			<?php
@@ -40,7 +37,6 @@
 				$tags_list = get_the_tag_list( '', __( ', ', 'northerndiv' ) );
 				if ( $tags_list ) :
 			?>
-			<span class="sep"> | </span>
 			<span class="tag-links">
 				<?php printf( __( 'Tagged %1$s', 'northerndiv' ), $tags_list ); ?>
 			</span>
@@ -48,10 +44,7 @@
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="sep"> | </span>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'northerndiv' ), __( '1 Comment', 'northerndiv' ), __( '% Comments', 'northerndiv' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'northerndiv' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

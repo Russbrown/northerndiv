@@ -36,8 +36,6 @@
 
 <?php wp_head(); ?>
 
-	 <!-- load modernizr -->
-
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
 
 </head>
@@ -49,9 +47,12 @@
 <!-- -->
 
 		<header id="masthead" class="site-header" role="banner">
-			<div class="logo"></div>
+			<a href="/"><div class="logo"></div></a>
+			<div class="tagline">UX, Startups and Design</div>
 		</header><!-- #masthead .site-header -->
 
 
-
+		<nav id="nav">
+			<?php wp_nav_menu(); ?>
+		</nav>
 

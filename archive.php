@@ -11,7 +11,7 @@
 get_header(); ?>
 
 		<section id="primary" class="content-area">
-			<div id="content" class="site-content" role="main">
+			<div id="content" class="site-content-blog" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -19,7 +19,7 @@ get_header(); ?>
 					<h1 class="page-title">
 						<?php
 							if ( is_category() ) {
-								printf( __( 'Category Archives: %s', 'northerndiv' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+								printf( __( ' %s', 'northerndiv' ), '<span class="' . single_cat_title( '', false ) . '">' . single_cat_title( '', false ) . '</span>' );
 
 							} elseif ( is_tag() ) {
 								printf( __( 'Tag Archives: %s', 'northerndiv' ), '<span>' . single_tag_title( '', false ) . '</span>' );
@@ -67,8 +67,6 @@ get_header(); ?>
 					?>
 				</header><!-- .page-header -->
 
-				<?php northerndiv_content_nav( 'nav-above' ); ?>
-
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -93,5 +91,4 @@ get_header(); ?>
 			</div><!-- #content .site-content -->
 		</section><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
