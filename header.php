@@ -48,11 +48,12 @@
 
 		<header id="masthead" class="site-header" role="banner">
 			<a href="/"><div class="logo"></div></a>
-			<div class="tagline">UX, Startups and Design</div>
+			<nav id="nav">
+				<?php wp_nav_menu(); ?>
+			</nav>
+
 		</header><!-- #masthead .site-header -->
 
 
-		<nav id="nav">
-			<?php wp_nav_menu(); ?>
-		</nav>
+
 

@@ -125,7 +125,18 @@ function my_init() {
 }
 add_action('init', 'my_init');
 
+  function my_mailchimp_fields( $fields ) {
+      unset ($fields[1]);
+      unset ($fields[2]);
+      unset ($fields[3]);
+      unset ($fields[4]);
+      unset ($fields[5]);  //Replace "X" with the field you want to unset, where the first field on the form is 0.
+      unset ($fields[6]);
+      unset ($fields[7]);
+      return $fields;
 
+  }
+  add_filter ( 'mailchimp_dev_mode_fields', 'my_mailchimp_fields');
 
 
 

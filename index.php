@@ -22,10 +22,12 @@ get_header(); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 							<h1><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title();?></a></h1>
 							<?php the_excerpt();?>
-							<div class="meta">
-								<span class="author">By <?php the_author(); ?> in</span>
+
+							<div class="meta">	 
+								<span class="date"><?php the_time('F jS, Y'); ?></span> 
 								<?php the_category(); ?>
 							</div>
 						</article>
@@ -34,9 +36,7 @@ get_header(); ?>
 
 					<?php endif; ?>
 
-<!-- 					<div class="contact">
-						<a href="http://www.twitter.com/therusstler">Tweet me</a>
-					</div> -->
+					<?php mailchimpSF_signup_form(); ?>
 
 			</div><!-- #content .site-content -->
 
