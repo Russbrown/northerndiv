@@ -30,6 +30,23 @@
 		  ga('send', 'pageview');
 	</script>
 
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop()>0)
+		 {
+		    $('.logo').fadeOut();
+		    $('nav').fadeOut();
+		    console.log('hello');
+		 }
+		else
+		 {
+		  $('.logo').fadeIn();
+		  $('nav').fadeIn();
+		 }
+	});
+	</script>
+
 	<!-- AddThis Smart Layers BEGIN -->
 	<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e82c78017ac245"></script>
@@ -37,7 +54,7 @@
 	  addthis.layers({
 	    'theme' : 'transparent', 
 	    'follow' : {
-	      'offset' : {'top':'-7px'},
+	      'offset' : {'top':'3px'},
 	      'services' : [
 	        {'service': 'twitter', 'id': 'northerndiv'},
 	        {'service': 'google_follow', 'id': '+northerndivplus'}
@@ -49,3 +66,4 @@
 
 </body>
 </html>
+

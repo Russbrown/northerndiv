@@ -5,11 +5,14 @@ jQuery( document ).ready( function( $ ) {
 	$(window).scroll(function() {
 		if ($(this).scrollTop()>0)
 		 {
-		    $('.nav-container').fadeOut();
+		    $('.logo').fadeOut();
+		    $('nav').fadeOut();
+		    console.log('hello');
 		 }
 		else
 		 {
-		  $('.nav-container').fadeIn();
+		  $('.logo').fadeIn();
+		  $('nav').fadeIn();
 		 }
 	});
 } );

@@ -47,10 +47,10 @@
 <!-- -->
 
 		<header id="masthead" class="site-header" role="banner">
-			<a href="/"><div class="logo"></div></a>
-			<nav id="nav">
-				<?php wp_nav_menu(); ?>
-			</nav>
+				<a href="/"><div class="logo"></div></a>
+				<nav id="nav">
+					<?php wp_nav_menu(); ?>
+				</nav>
 
 		</header><!-- #masthead .site-header -->
 

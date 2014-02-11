@@ -18,8 +18,19 @@ get_header(); ?>
 
 				<?php if ( have_posts() ) : ?>
 
-					<?php /* Start the Loop */ ?>
+					<?php /* Start the Loop */ $count = 1; ?>
+
 					<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php if ($count === 1) { ?>
+
+						<article id="featured" <?php post_class(); ?>>
+							<div class="featured-image"><?php the_post_thumbnail();?></div>
+							<h1><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title();?></a></h1>
+<!-- 							<div class="featured-excerpt"><?php the_excerpt();?></div> -->
+						</article>
+
+					<?php } else { ?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -31,6 +42,10 @@ get_header(); ?>
 								<?php the_category(); ?>
 							</div>
 						</article>
+
+					<?php } ?>
+
+					<?php $count++; ?>
 
 					<?php endwhile; ?>
 

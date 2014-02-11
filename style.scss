@@ -96,6 +96,7 @@ a img {
 	margin: 20px auto 0;
 	width: 90%;
 	padding: 0 5%;
+	overflow: hidden;
 }
 
 body,
@@ -170,20 +171,20 @@ HEADER
 *******************************************************************************************/
 
 #masthead {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
-	background: #1998e3;
-	height: 30px;
+	height: 50px;
+	overflow: visible;
 	width: 100%;
 	.logo {
 		background: url(img/logo.png);
 		background-size: 100%;
 		width: 100px;
 		height: 100px;
-		float: left;
 		position: relative;
-		top: -22px;
+		z-index: 2;
+		float: left;
 		margin: 0 2% 0 5%;
 	}
 	.tagline {
@@ -193,10 +194,6 @@ HEADER
 	.twitter-follow-button {
 		float: right;
 	}
-}
-
-#primary {
-	margin-top: 5em;
 }
 
 
@@ -402,12 +399,13 @@ textarea {
 
 #nav {
 	#menu-nav {
-		margin: 8px 15% 0 0;
+		margin: 20px 15% 0px 45%;
 		list-style: none;
+		width: 100%;
 		li {
 			float: left;
 			font-size: 0.6em;
-			margin-right: 0.5em;
+			margin-right: 1em;
 			text-transform: uppercase;
 			font-family: verdana;
 		}
@@ -417,7 +415,7 @@ textarea {
 @media screen and (min-width: 500px) {
 	#nav {
 		#menu-nav {
-			margin: 5px 15%;
+			margin: 18px 15%;
 			li {
 				font-size: 0.8em;
 				margin-right: 2em;
@@ -456,7 +454,8 @@ textarea {
 .site-content-blog {
 	article {
 		width: 100%;
-		padding: 0 0% 2em;
+		margin-top: 1em;
+		position: relative;
 		h1 {
 			font-size: 1.4em;
 			line-height: 1.4em;
@@ -470,6 +469,39 @@ textarea {
 		.date {
 			float: left;
 			margin-right: 1em;
+		}
+	}
+	#featured {
+		width: 112%;
+		position: relative;
+		top: 35px;
+		left: -6%;
+		margin-top: 0;
+		margin-bottom: 2em;
+		.featured-image {
+			overflow: hidden;
+			img {
+			width: 2000px;
+			}
+		}
+		h1 {
+			position: absolute;
+			top: 1em;
+			margin: 0% 5%;
+			font-size: 3em;
+			a {
+				color: #364342;
+			}
+			a:hover {
+				color: #fff;
+			}
+		}
+		.featured-excerpt {
+			position: absolute;
+			top: 22em;
+			margin: 0% 5% 0 5%;
+			color: #364342;
+			font-size: 0.8em;
 		}
 	}
 	.category-ux h1,
@@ -492,8 +524,6 @@ textarea {
 	width: 100%;
 }
 
-
-
 @media screen and (min-width: 700px) {
 	.site-content-blog {
 		article {
@@ -502,6 +532,16 @@ textarea {
 			padding: 0%;
 			margin-right: 10%; 
 			float: left;
+		}
+		#featured {
+			h1 {
+				top: 2em;
+				font-size: 3em;
+			}
+			.featured-excerpt {
+				font-size: 1.4em;
+				top: 12em;
+			}
 		}
 	}	
 }
@@ -527,12 +567,33 @@ object {
 .site-content-single {
 	article {
 		max-width: 600px;
+		margin: 14% auto;
+		position: relative;
+		z-index: 2;
 		img {
 			width: 100%;
 			height: auto;
 		}
 		h1 {
-			padding-top: 1em;
+			position: relative;
+			padding-top: 10%;
+			max-width: 600px;
+			color: #364342;
+			font-size: 3.5em;
+
+		}
+		.content {
+			padding-top: 45%;
+		}
+	}
+	.featured-image {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 55px;
+		overflow: hidden;
+		img {
+			width: 2000px;
 		}
 	}
 	.category-ux h1 {
@@ -546,6 +607,30 @@ object {
 	.category-startups h1 {
 		padding-bottom: 5px;
 		border-bottom: 1px solid #D5C475;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.site-content-single {
+		article {
+			h1 {
+				top: 10%;
+				font-size: 4em;
+			}
+		}
+		.content {
+			padding-top: 25%;
+		}	
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.site-content-single {
+		article {
+			h1 {
+				padding-top: 0;
+			}
+		}
 	}
 }
 
@@ -565,6 +650,10 @@ object {
 	.Startups {
 		border-bottom: 1px solid #D5C475;
 	}
+}
+
+.category {
+	margin-top: 6em;
 }
 
 
