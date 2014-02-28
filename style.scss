@@ -104,14 +104,14 @@ button,
 input,
 select,
 textarea {
-	color: #afbebc;
+	color: #444;
 	font-family: 'Vollkorn', serif;
 	font-size: 16px;
 	line-height: 1.5;
 }
 
 body {
-	background: url(img/bg.jpg)
+	overflow: hidden;
 }
 
 hr {
@@ -127,6 +127,7 @@ h1 {
 	font-size: 2em;
 	line-height: 1em;
 	margin: 1em 0;
+	font-weight: 700;
 }
 
 h2 {
@@ -135,22 +136,29 @@ h2 {
 	line-height: 1.8em;
 }
 
+h3 {
+	font-size: 1.4em;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin-bottom: 1em;
+}
+
 /* Links */
 a {
 	text-decoration: none;
-	color: #ccc;
+	color: #333;
 	transition: color, 1s;
 	-webkit-transition: color, 1s;
 }
 a:visited {
-	color: #ccc;
+	color: #555;
 }
 a:hover,
 a:focus,
 a:active {
 	transition: color, 1s;
 	-webkit-transition: color, 1s;
-	color: #eee;
+	color: #777;
 	text-decoration: none;
 }
 
@@ -174,18 +182,16 @@ HEADER
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 50px;
+	height: 55px;
 	overflow: visible;
 	width: 100%;
+	border-bottom: 1px solid #ddd;
 	.logo {
-		background: url(img/logo.png);
-		background-size: 100%;
-		width: 100px;
-		height: 100px;
-		position: relative;
-		z-index: 2;
 		float: left;
-		margin: 0 2% 0 5%;
+		margin: 0px 2% 0 5%;
+		font-weight: 700;
+		font-size: 3em;
+		line-height: 1.3em;
 	}
 	.tagline {
 		padding-top: 1.5em;
@@ -399,15 +405,14 @@ textarea {
 
 #nav {
 	#menu-nav {
-		margin: 20px 15% 0px 45%;
+		margin: 22px 15% 0px 45%;
 		list-style: none;
 		width: 100%;
 		li {
 			float: left;
 			font-size: 0.6em;
-			margin-right: 1em;
+			margin-right: 0.8em;
 			text-transform: uppercase;
-			font-family: verdana;
 		}
 	}
 }
@@ -415,7 +420,7 @@ textarea {
 @media screen and (min-width: 500px) {
 	#nav {
 		#menu-nav {
-			margin: 18px 15%;
+			margin: 20px 15%;
 			li {
 				font-size: 0.8em;
 				margin-right: 2em;
@@ -454,11 +459,11 @@ textarea {
 .site-content-blog {
 	article {
 		width: 100%;
-		margin-top: 1em;
-		position: relative;
+		margin-bottom: 3em;
 		h1 {
 			font-size: 1.4em;
 			line-height: 1.4em;
+			margin: 0.25em 0;
 		}
 		.post-categories {
 			float: left;
@@ -472,49 +477,29 @@ textarea {
 		}
 	}
 	#featured {
-		width: 112%;
-		position: relative;
-		top: 35px;
-		left: -6%;
-		margin-top: 0;
-		margin-bottom: 2em;
-		.featured-image {
-			overflow: hidden;
-			img {
-			width: 2000px;
-			}
-		}
+		width: 100%;
+		margin-top: 3em;
+		margin-bottom: 0em;
 		h1 {
-			position: absolute;
 			top: 1em;
-			margin: 0% 5%;
 			font-size: 3em;
-			a {
-				color: #364342;
-			}
-			a:hover {
-				color: #fff;
-			}
 		}
 		.featured-excerpt {
-			position: absolute;
-			top: 22em;
-			margin: 0% 5% 0 5%;
 			color: #364342;
 			font-size: 0.8em;
 		}
 	}
 	.category-ux h1,
 	.category-ux .post-categories {
-		border-bottom: 1px solid #C489BA;
+		border-bottom: 2px solid #C489BA;
 	}
 	.category-design h1,
 	.category-design .post-categories {
-		border-bottom: 1px solid #48AB78;
+		border-bottom: 2px solid #48AB78;
 	}
 	.category-startups h1,
 	.category-startups .post-categories {
-		border-bottom: 1px solid #D5C475;
+		border-bottom: 2px solid #D5C475;
 	}
 }
 
@@ -528,19 +513,17 @@ textarea {
 	.site-content-blog {
 		article {
 			width: 40%;
-			height: 380px;
-			padding: 0%;
 			margin-right: 10%; 
 			float: left;
+			height: 100px;
 		}
 		#featured {
+			height: 190px;
 			h1 {
-				top: 2em;
 				font-size: 3em;
 			}
 			.featured-excerpt {
 				font-size: 1.4em;
-				top: 12em;
 			}
 		}
 	}	
@@ -567,23 +550,17 @@ object {
 .site-content-single {
 	article {
 		max-width: 600px;
-		margin: 14% auto;
+		margin: 0px auto;
 		position: relative;
 		z-index: 2;
-		img {
-			width: 100%;
-			height: auto;
-		}
-		h1 {
-			position: relative;
-			padding-top: 10%;
+		.post-title {
 			max-width: 600px;
 			color: #364342;
-			font-size: 3.5em;
-
+			font-size: 2.5em;
+			margin-top: 2em;			
 		}
-		.content {
-			padding-top: 45%;
+		.meta {
+			padding-bottom: 20px;
 		}
 	}
 	.featured-image {
@@ -594,43 +571,44 @@ object {
 		overflow: hidden;
 		img {
 			width: 2000px;
+			box-shadow: 1px 1px 3px #777;
 		}
 	}
 	.category-ux h1 {
 		padding-bottom: 5px;
-		border-bottom: 1px solid #C489BA;
+		border-bottom: 2px solid #C489BA;
 	}
 	.category-design h1 {
 		padding-bottom: 5px;
-		border-bottom: 1px solid #48AB78;
+		border-bottom: 2px solid #48AB78;
 	}
 	.category-startups h1 {
 		padding-bottom: 5px;
-		border-bottom: 1px solid #D5C475;
+		border-bottom: 2px solid #D5C475;
 	}
 }
 
 @media screen and (min-width: 900px) {
 	.site-content-single {
 		article {
-			h1 {
+			.post-title {
 				top: 10%;
 				font-size: 4em;
-			}
+			}	
 		}
-		.content {
-			padding-top: 25%;
-		}	
+
 	}
 }
 
 @media screen and (min-width: 1100px) {
 	.site-content-single {
 		article {
-			h1 {
+			.post-title {
+				top: 0%;
 				padding-top: 0;
 			}
 		}
+
 	}
 }
 
@@ -642,71 +620,19 @@ object {
 		padding: 10px 0px 0px 0px;
 	}
 	.UX {
-		border-bottom: 1px solid #C489BA;
+		border-bottom: 2px solid #C489BA;
 	}
 	.Design {
-		border-bottom: 1px solid #48AB78;
+		border-bottom: 2px solid #48AB78;
 	}
 	.Startups {
-		border-bottom: 1px solid #D5C475;
+		border-bottom: 2px solid #D5C475;
 	}
 }
 
 .category {
 	margin-top: 6em;
 }
-
-
-/* =Navigation
------------------------------------------------ */
-// .next:after {
-// 	content: 'next post';
-// 	padding-left: 10px;
-// }
-// .previous {
-// 	padding-top: 40px;
-// }
-// .previous:after {
-// 	content: 'previous post';
-// 	padding-left: 10px;
-// }
-
-// @media screen and (min-width: 900px) {
-// 	.previous,
-// 	.next {
-// 		position: fixed;
-// 		top: 50%;
-// 		width: 50px;
-// 		height: 50px;
-// 		border-radius: 50px;
-// 		background: #1e99e0;
-// 		a {
-// 			text-align: center;
-// 			margin-top: 7px;
-// 			display: block;
-// 			text-decoration: none;
-// 			font-size: 1.6em;
-// 		}
-// 	}
-// 	.next {
-// 		right: 0.5%;
-// 	}
-// 	.previous {
-// 		left: 0.5%;
-// 		padding-top: 0;
-// 	}	
-// 	.next:after {
-// 		content: '';
-// 		padding-left: 10px;
-// 	}
-
-// 	.previous:after {
-// 		content: '';
-// 		padding-left: 10px;
-// 	}
-// }
-
-
 
 /* =Navigation
 ----------------------------------------------- */
@@ -722,6 +648,10 @@ object {
 		-webkit-appearance: none;
 		border: none;
 		margin-top: 0;
+		background: #1e9ae1;
+		box-shadow: none;
+		color: #eee;
+		text-shadow: none;
 	}	
 	.mc_success_msg {
 		color: #fff;

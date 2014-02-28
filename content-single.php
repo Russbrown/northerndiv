@@ -4,21 +4,20 @@
  * @since NorthernDiv 1.0
  */
 ?>
-<div class="featured-image">
-<?php 
-	if ( has_post_thumbnail() ) {
-		the_post_thumbnail();
-} ?>
-</div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<h1><?php the_title(); ?></h1>
+	<h1 class="post-title"><?php the_title(); ?></h1>
 
 	<div class="content"><?php the_content(); ?></div>
 
 	<div class="meta">
 		<span class="date">Published <?php	the_time('F jS, Y'); ?></span> 
-		by <?php the_author(); ?>
+		by <a href="http://www.google.com/+RussellBrownplus"><?php the_author(); ?></a>
 	</div>
+
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="NorthernDiv" data-count="none">Tweet</a>
+
+	<div class="g-plusone" data-size="medium" data-annotation="none"></div>
+
 
 	<?php mailchimpSF_signup_form(); ?>
 

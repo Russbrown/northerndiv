@@ -24,19 +24,17 @@ get_header(); ?>
 
 					<?php if ($count === 1) { ?>
 
-						<article id="featured" <?php post_class(); ?>>
-							<div class="featured-image"><?php the_post_thumbnail();?></div>
-							<h1><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title();?></a></h1>
-<!-- 							<div class="featured-excerpt"><?php the_excerpt();?></div> -->
-						</article>
+						<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
+							<article id="featured" <?php post_class(); ?>>
+								<h1><?php the_title();?></h1>
+								<div class="featured-excerpt"><?php the_excerpt();?></div>
+							</article>
+						</a>
 
 					<?php } else { ?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 							<h1><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'northerndiv' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title();?></a></h1>
-							<?php the_excerpt();?>
-
 							<div class="meta">	 
 								<span class="date"><?php the_time('F jS, Y'); ?></span> 
 								<?php the_category(); ?>
