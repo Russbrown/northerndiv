@@ -179,18 +179,19 @@ HEADER
 *******************************************************************************************/
 
 #masthead {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 55px;
 	overflow: visible;
 	width: 100%;
 	border-bottom: 1px solid #ddd;
+	background: rgba(255,255,255,0.9);
 	.logo {
 		float: left;
-		margin: 0px 2% 0 5%;
+		margin: 11px 2% 0 5%;
 		font-weight: 700;
-		font-size: 3em;
+		font-size: 2em;
 		line-height: 1.3em;
 	}
 	.tagline {
