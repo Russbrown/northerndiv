@@ -33,24 +33,6 @@
 	  })();
 	</script>
 
-	<!-- AddThis Smart Layers BEGIN -->
-	<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e82c78017ac245"></script>
-	<script type="text/javascript">
-	  addthis.layers({
-	    'theme' : 'transparent', 
-	    'follow' : {
-	      'offset' : {'top':'5px'},
-	      'services' : [
-	        {'service': 'twitter', 'id': 'northerndiv'},
-	        {'service': 'google_follow', 'id': '+northerndivplus'}
-	      ]
-	    },
-	    'recommended' : {}    
-	  });
-	</script>
-	<!-- AddThis Smart Layers END -->
-
 </body>
 </html>
 
