@@ -6,6 +6,8 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+<!-- 	<div class="featured-img"><?php the_post_thumbnail(); ?></div>
+ -->
 	<h1 class="post-title"><?php the_title(); ?></h1>
 
 	<div class="content"><?php the_content(); ?></div>

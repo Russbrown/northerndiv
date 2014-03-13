@@ -20,9 +20,9 @@ get_header(); ?>
 
 					<h2>UX, Design & Startups</h2>
 					<p>A user experience design blog covering usability, startups, research and the latest thinking in UX and interaction design.</p>
-					<a href="http://www.twitter.com/therusstler"><i class="fa fa-twitter-square fa-2x"></i></a>
+					<a href="http://www.twitter.com/northerndiv"><i class="fa fa-twitter-square fa-2x"></i></a>
 					<a href="http://www.google.com/+Northerndivplus"><i class="fa fa-google-plus-square fa-2x"></i></a>
-
+					<a href="http://www.northerndiv.com/?feed=rss"><i class="fa fa-rss fa-2x"></i></a>
 				</div>
 
 				<div id="featured">
@@ -80,6 +80,8 @@ get_header(); ?>
 				</div>
 
 			</div><!-- #content .site-content -->
+
+			<?php northerndiv_content_nav( 'nav-below' ); ?>
 
 		</div><!-- #primary .content-area -->
 
