@@ -107,6 +107,7 @@ textarea {
 	font-family: 'Vollkorn', serif;
 	font-size: 16px;
 	line-height: 1.5;
+	
 }
 
 hr {
@@ -178,6 +179,9 @@ a:active {
 }
 .fa-google-plus-square {
 	color: #db4c3f;
+}
+.fa-pinterest-square {
+	color: #cd313a;
 }
 .fa-rss {
 	color: #f46b36;
@@ -536,7 +540,7 @@ textarea {
 .info-module {
 	margin-top: 4em;
 	a {
-		padding-right: 20%;
+		padding-right: 10%;
 	}
 }
 .nav-previous {
@@ -595,6 +599,21 @@ object {
 			margin-top: 2em;			
 		}
 		.meta {
+			padding-bottom: 20px;
+		}
+		a {
+			text-decoration: underline;
+		}
+		.wp-caption {
+			background: #eee;
+			box-shadow: 1px 1px #ddd;
+			padding: 5px;
+			margin-bottom: 20px;
+		}
+		.wp-caption-text {
+			padding-bottom: 0;
+		}
+		.content > h2 {
 			padding-bottom: 20px;
 		}
 	}

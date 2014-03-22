@@ -86,19 +86,18 @@ get_header(); ?>
 
 				</div>
 
-				<?php northerndiv_content_nav( 'nav-below' ); ?>
-
 			<?php else : ?>
 
-			
-
 				<?php get_template_part( 'no-results', 'archive' ); ?>
-
-
 
 			<?php endif; ?>
 
 			</div><!-- #content .site-content -->
+
+		<?php northerndiv_content_nav( 'nav-below' ); ?>
+
 		</section><!-- #primary .content-area -->
+
+		
 
 <?php get_footer(); ?>
